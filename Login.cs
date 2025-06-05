@@ -59,11 +59,6 @@ namespace Club_Management_System
         private void siticoneTextBox11_Click(object sender, EventArgs e)
         {
 
-
-
-
-
-
         }
 
         private void siticoneCheckBox1_Click(object sender, EventArgs e)
@@ -73,7 +68,7 @@ namespace Club_Management_System
 
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void siticoneTextButton2_Click(object sender, EventArgs e)

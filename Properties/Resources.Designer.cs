@@ -59,15 +59,5 @@ namespace Club_Management_System.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sleek_Dark_Gray_and_Yellow_Logo__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Sleek Dark Gray and Yellow Logo (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
