@@ -95,6 +95,17 @@ namespace Club_Management_System
             //set timer interval to lowest value to make it smooth
             manageProfileTimer.Start();
         }
+
+        private void dateTimepanel_Paint(object sender, PaintEventArgs e)
+        {
+            dateTimeTimer.Start();
+        }
+
+        private void dateTimeTimer_Tick(object sender, EventArgs e)
+        {
+            dateLabel.Text = DateTime.Now.ToString("dd-MM-yyyy ddd");
+            timeLabel.Text = DateTime.Now.ToString("hh:mm:ss tt");
+        }
     }
 }
         
