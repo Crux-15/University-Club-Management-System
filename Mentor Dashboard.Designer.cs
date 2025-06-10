@@ -58,15 +58,16 @@
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.manageProfileTimer = new System.Windows.Forms.Timer(this.components);
             this.postPanel = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticoneTextBox1 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.postButton = new SiticoneNetFrameworkUI.SiticoneButton();
             this.siticoneTextBox2 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticonePanel2 = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.siticoneTextBox1 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.dateTimepanel = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.dateLabel = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.timeLabel = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.dateLabel = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
+            this.feed = new System.Windows.Forms.FlowLayoutPanel();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -460,6 +461,66 @@
             this.postPanel.UsePatternTexture = false;
             this.postPanel.UseRadialGradient = false;
             // 
+            // siticoneTextBox1
+            // 
+            this.siticoneTextBox1.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox1.AccessibleName = "Text Box";
+            this.siticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.BlinkCount = 3;
+            this.siticoneTextBox1.BlinkShadow = false;
+            this.siticoneTextBox1.BorderColor1 = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.BorderSize = 0;
+            this.siticoneTextBox1.CanShake = true;
+            this.siticoneTextBox1.ContinuousBlink = false;
+            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.siticoneTextBox1.CursorBlinkRate = 500;
+            this.siticoneTextBox1.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox1.CursorHeight = 26;
+            this.siticoneTextBox1.CursorOffset = 0;
+            this.siticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox1.CursorWidth = 1;
+            this.siticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.EnableDropShadow = false;
+            this.siticoneTextBox1.FillColor1 = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.FillColor2 = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.IsEnabled = true;
+            this.siticoneTextBox1.IsReadOnly = true;
+            this.siticoneTextBox1.Location = new System.Drawing.Point(118, 11);
+            this.siticoneTextBox1.Name = "siticoneTextBox1";
+            this.siticoneTextBox1.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneTextBox1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
+            this.siticoneTextBox1.ShadowAnimationDuration = 1;
+            this.siticoneTextBox1.ShadowBlur = 10;
+            this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox1.Size = new System.Drawing.Size(594, 58);
+            this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.SolidFillColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.TabIndex = 3;
+            this.siticoneTextBox1.Text = "Write Your Post here";
+            this.siticoneTextBox1.TextAlign = SiticoneNetFrameworkUI.Helpers.Text.TextAlignment.Center;
+            this.siticoneTextBox1.TextPadding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.siticoneTextBox1.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox1.ValidationFunction = null;
+            // 
             // postButton
             // 
             this.postButton.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
@@ -645,6 +706,75 @@
             this.siticonePanel2.UsePatternTexture = false;
             this.siticonePanel2.UseRadialGradient = false;
             // 
+            // dateTimepanel
+            // 
+            this.dateTimepanel.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dateTimepanel.BackColor = System.Drawing.Color.Transparent;
+            this.dateTimepanel.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.dateTimepanel.BorderDashPattern = null;
+            this.dateTimepanel.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
+            this.dateTimepanel.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
+            this.dateTimepanel.BorderThickness = 2F;
+            this.dateTimepanel.Controls.Add(this.timeLabel);
+            this.dateTimepanel.Controls.Add(this.dateLabel);
+            this.dateTimepanel.CornerRadiusBottomLeft = 15F;
+            this.dateTimepanel.CornerRadiusBottomRight = 15F;
+            this.dateTimepanel.CornerRadiusTopLeft = 15F;
+            this.dateTimepanel.CornerRadiusTopRight = 15F;
+            this.dateTimepanel.EnableAcrylicEffect = false;
+            this.dateTimepanel.EnableMicaEffect = false;
+            this.dateTimepanel.EnableRippleEffect = false;
+            this.dateTimepanel.FillColor = System.Drawing.Color.Black;
+            this.dateTimepanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dateTimepanel.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.dateTimepanel.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.dateTimepanel.Location = new System.Drawing.Point(541, 11);
+            this.dateTimepanel.Name = "dateTimepanel";
+            this.dateTimepanel.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.dateTimepanel.RippleAlpha = 50;
+            this.dateTimepanel.RippleAlphaDecrement = 3;
+            this.dateTimepanel.RippleColor = System.Drawing.Color.Transparent;
+            this.dateTimepanel.RippleMaxSize = 600F;
+            this.dateTimepanel.RippleSpeed = 15F;
+            this.dateTimepanel.ShowBorder = true;
+            this.dateTimepanel.Size = new System.Drawing.Size(262, 74);
+            this.dateTimepanel.TabIndex = 1;
+            this.dateTimepanel.TabStop = true;
+            this.dateTimepanel.TrackSystemTheme = false;
+            this.dateTimepanel.UseBorderGradient = false;
+            this.dateTimepanel.UseMultiGradient = false;
+            this.dateTimepanel.UsePatternTexture = false;
+            this.dateTimepanel.UseRadialGradient = false;
+            this.dateTimepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dateTimepanel_Paint);
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.timeLabel.Location = new System.Drawing.Point(64, 34);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(148, 28);
+            this.timeLabel.TabIndex = 1;
+            this.timeLabel.Text = "Time";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.dateLabel.Location = new System.Drawing.Point(51, 6);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(196, 28);
+            this.dateLabel.TabIndex = 0;
+            this.dateLabel.Text = "Date";
+            // 
             // siticoneTextBox4
             // 
             this.siticoneTextBox4.AccessibleDescription = "A customizable text input field.";
@@ -705,139 +835,19 @@
             this.siticoneTextBox4.ValidationErrorMessage = "Invalid input.";
             this.siticoneTextBox4.ValidationFunction = null;
             // 
-            // siticoneTextBox1
-            // 
-            this.siticoneTextBox1.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox1.AccessibleName = "Text Box";
-            this.siticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.BlinkCount = 3;
-            this.siticoneTextBox1.BlinkShadow = false;
-            this.siticoneTextBox1.BorderColor1 = System.Drawing.Color.DimGray;
-            this.siticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.BorderSize = 0;
-            this.siticoneTextBox1.CanShake = true;
-            this.siticoneTextBox1.ContinuousBlink = false;
-            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneTextBox1.CursorBlinkRate = 500;
-            this.siticoneTextBox1.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox1.CursorHeight = 26;
-            this.siticoneTextBox1.CursorOffset = 0;
-            this.siticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox1.CursorWidth = 1;
-            this.siticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.EnableDropShadow = false;
-            this.siticoneTextBox1.FillColor1 = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.FillColor2 = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.IsEnabled = true;
-            this.siticoneTextBox1.IsReadOnly = true;
-            this.siticoneTextBox1.Location = new System.Drawing.Point(118, 11);
-            this.siticoneTextBox1.Name = "siticoneTextBox1";
-            this.siticoneTextBox1.PlaceholderColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.PlaceholderText = "Enter text here...";
-            this.siticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.DimGray;
-            this.siticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.DimGray;
-            this.siticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneTextBox1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
-            this.siticoneTextBox1.ShadowAnimationDuration = 1;
-            this.siticoneTextBox1.ShadowBlur = 10;
-            this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox1.Size = new System.Drawing.Size(594, 58);
-            this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.SolidFillColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.TabIndex = 3;
-            this.siticoneTextBox1.Text = "Write Your Post here";
-            this.siticoneTextBox1.TextAlign = SiticoneNetFrameworkUI.Helpers.Text.TextAlignment.Center;
-            this.siticoneTextBox1.TextPadding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.siticoneTextBox1.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox1.ValidationFunction = null;
-            // 
-            // dateTimepanel
-            // 
-            this.dateTimepanel.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dateTimepanel.BackColor = System.Drawing.Color.Transparent;
-            this.dateTimepanel.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            this.dateTimepanel.BorderDashPattern = null;
-            this.dateTimepanel.BorderGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
-            this.dateTimepanel.BorderGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(61)))));
-            this.dateTimepanel.BorderThickness = 2F;
-            this.dateTimepanel.Controls.Add(this.timeLabel);
-            this.dateTimepanel.Controls.Add(this.dateLabel);
-            this.dateTimepanel.CornerRadiusBottomLeft = 15F;
-            this.dateTimepanel.CornerRadiusBottomRight = 15F;
-            this.dateTimepanel.CornerRadiusTopLeft = 15F;
-            this.dateTimepanel.CornerRadiusTopRight = 15F;
-            this.dateTimepanel.EnableAcrylicEffect = false;
-            this.dateTimepanel.EnableMicaEffect = false;
-            this.dateTimepanel.EnableRippleEffect = false;
-            this.dateTimepanel.FillColor = System.Drawing.Color.Black;
-            this.dateTimepanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dateTimepanel.GradientColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.LightGray,
-        System.Drawing.Color.Gray};
-            this.dateTimepanel.GradientPositions = new float[] {
-        0F,
-        0.5F,
-        1F};
-            this.dateTimepanel.Location = new System.Drawing.Point(541, 11);
-            this.dateTimepanel.Name = "dateTimepanel";
-            this.dateTimepanel.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
-            this.dateTimepanel.RippleAlpha = 50;
-            this.dateTimepanel.RippleAlphaDecrement = 3;
-            this.dateTimepanel.RippleColor = System.Drawing.Color.Transparent;
-            this.dateTimepanel.RippleMaxSize = 600F;
-            this.dateTimepanel.RippleSpeed = 15F;
-            this.dateTimepanel.ShowBorder = true;
-            this.dateTimepanel.Size = new System.Drawing.Size(262, 74);
-            this.dateTimepanel.TabIndex = 1;
-            this.dateTimepanel.TabStop = true;
-            this.dateTimepanel.TrackSystemTheme = false;
-            this.dateTimepanel.UseBorderGradient = false;
-            this.dateTimepanel.UseMultiGradient = false;
-            this.dateTimepanel.UsePatternTexture = false;
-            this.dateTimepanel.UseRadialGradient = false;
-            this.dateTimepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dateTimepanel_Paint);
-            // 
-            // dateLabel
-            // 
-            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.dateLabel.Location = new System.Drawing.Point(51, 6);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(196, 28);
-            this.dateLabel.TabIndex = 0;
-            this.dateLabel.Text = "Date";
-            // 
-            // timeLabel
-            // 
-            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.timeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.timeLabel.Location = new System.Drawing.Point(64, 34);
-            this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(148, 28);
-            this.timeLabel.TabIndex = 1;
-            this.timeLabel.Text = "Time";
-            // 
             // dateTimeTimer
             // 
             this.dateTimeTimer.Enabled = true;
             this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
+            // 
+            // feed
+            // 
+            this.feed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.feed.Location = new System.Drawing.Point(274, 309);
+            this.feed.Name = "feed";
+            this.feed.Size = new System.Drawing.Size(843, 277);
+            this.feed.TabIndex = 2;
+            this.feed.Paint += new System.Windows.Forms.PaintEventHandler(this.feed_Paint);
             // 
             // Mentor_Dashboard
             // 
@@ -845,6 +855,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1124, 598);
+            this.Controls.Add(this.feed);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.postPanel);
             this.Controls.Add(this.sidebar);
@@ -916,5 +927,6 @@
         private SiticoneNetFrameworkUI.SiticoneLabel timeLabel;
         private SiticoneNetFrameworkUI.SiticoneLabel dateLabel;
         private System.Windows.Forms.Timer dateTimeTimer;
+        private System.Windows.Forms.FlowLayoutPanel feed;
     }
 }
