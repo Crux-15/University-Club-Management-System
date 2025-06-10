@@ -113,6 +113,24 @@
     <Compile Include="Mentor Dashboard.Designer.cs">
       <DependentUpon>Mentor Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MentorManageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MentorManageAdmin.Designer.cs">
+      <DependentUpon>MentorManageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mentorManageExecutive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mentorManageExecutive.Designer.cs">
+      <DependentUpon>mentorManageExecutive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MentorManageMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MentorManageMember.Designer.cs">
+      <DependentUpon>MentorManageMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="General_Member.resx">
@@ -123,6 +141,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mentor Dashboard.resx">
       <DependentUpon>Mentor Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MentorManageAdmin.resx">
+      <DependentUpon>MentorManageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mentorManageExecutive.resx">
+      <DependentUpon>mentorManageExecutive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MentorManageMember.resx">
+      <DependentUpon>MentorManageMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -35,18 +35,12 @@
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.manageProfileContainer = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.manageMember = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.manageExecutive = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.manageAdmin = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.manageProfiles = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -67,16 +61,12 @@
             this.dateLabel = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
-            this.feed = new System.Windows.Forms.FlowLayoutPanel();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.manageProfileContainer.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -139,170 +129,96 @@
             // manageProfileContainer
             // 
             this.manageProfileContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.manageProfileContainer.Controls.Add(this.panel7);
-            this.manageProfileContainer.Controls.Add(this.panel11);
             this.manageProfileContainer.Controls.Add(this.panel10);
             this.manageProfileContainer.Controls.Add(this.panel8);
-            this.manageProfileContainer.Controls.Add(this.panel9);
             this.manageProfileContainer.Controls.Add(this.panel5);
             this.manageProfileContainer.Controls.Add(this.panel6);
             this.manageProfileContainer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.manageProfileContainer.Location = new System.Drawing.Point(3, 81);
-            this.manageProfileContainer.MaximumSize = new System.Drawing.Size(251, 284);
+            this.manageProfileContainer.MaximumSize = new System.Drawing.Size(251, 166);
             this.manageProfileContainer.MinimumSize = new System.Drawing.Size(251, 51);
             this.manageProfileContainer.Name = "manageProfileContainer";
             this.manageProfileContainer.Size = new System.Drawing.Size(251, 51);
             this.manageProfileContainer.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Location = new System.Drawing.Point(0, 95);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(253, 32);
-            this.panel7.TabIndex = 8;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-11, -10);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(276, 50);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "       Remove Admin";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.button9);
-            this.panel11.Location = new System.Drawing.Point(0, 247);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(253, 32);
-            this.panel11.TabIndex = 7;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(-11, -10);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(276, 50);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "       Remove Member";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.manageProfileContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.manageProfileContainer_Paint);
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.button8);
-            this.panel10.Location = new System.Drawing.Point(0, 209);
+            this.panel10.Controls.Add(this.manageMember);
+            this.panel10.Location = new System.Drawing.Point(0, 133);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(253, 32);
             this.panel10.TabIndex = 7;
             // 
-            // button8
+            // manageMember
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(-11, -10);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(276, 50);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "       Add Member";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.manageMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.manageMember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageMember.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageMember.ForeColor = System.Drawing.Color.White;
+            this.manageMember.Image = ((System.Drawing.Image)(resources.GetObject("manageMember.Image")));
+            this.manageMember.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageMember.Location = new System.Drawing.Point(-11, -10);
+            this.manageMember.Name = "manageMember";
+            this.manageMember.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.manageMember.Size = new System.Drawing.Size(276, 50);
+            this.manageMember.TabIndex = 3;
+            this.manageMember.Text = "       Member";
+            this.manageMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageMember.UseVisualStyleBackColor = false;
+            this.manageMember.Click += new System.EventHandler(this.manageMember_Click);
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button10);
-            this.panel8.Location = new System.Drawing.Point(0, 133);
+            this.panel8.Controls.Add(this.manageExecutive);
+            this.panel8.Location = new System.Drawing.Point(0, 95);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(253, 32);
             this.panel8.TabIndex = 7;
             // 
-            // button10
+            // manageExecutive
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(-12, -10);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(276, 50);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "       Add Executive";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.button7);
-            this.panel9.Location = new System.Drawing.Point(0, 171);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(253, 32);
-            this.panel9.TabIndex = 7;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(-11, -10);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(276, 50);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "       Remove Executive";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.manageExecutive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.manageExecutive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageExecutive.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageExecutive.ForeColor = System.Drawing.Color.White;
+            this.manageExecutive.Image = ((System.Drawing.Image)(resources.GetObject("manageExecutive.Image")));
+            this.manageExecutive.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageExecutive.Location = new System.Drawing.Point(-12, -10);
+            this.manageExecutive.Name = "manageExecutive";
+            this.manageExecutive.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.manageExecutive.Size = new System.Drawing.Size(276, 50);
+            this.manageExecutive.TabIndex = 4;
+            this.manageExecutive.Text = "       Executive";
+            this.manageExecutive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageExecutive.UseVisualStyleBackColor = false;
+            this.manageExecutive.Click += new System.EventHandler(this.manageExecutive_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button4);
+            this.panel5.Controls.Add(this.manageAdmin);
             this.panel5.Location = new System.Drawing.Point(0, 57);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(253, 32);
             this.panel5.TabIndex = 6;
             // 
-            // button4
+            // manageAdmin
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-11, -10);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(276, 50);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "       Add Admin";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.manageAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.manageAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageAdmin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageAdmin.ForeColor = System.Drawing.Color.White;
+            this.manageAdmin.Image = ((System.Drawing.Image)(resources.GetObject("manageAdmin.Image")));
+            this.manageAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageAdmin.Location = new System.Drawing.Point(-11, -10);
+            this.manageAdmin.Name = "manageAdmin";
+            this.manageAdmin.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.manageAdmin.Size = new System.Drawing.Size(276, 50);
+            this.manageAdmin.TabIndex = 3;
+            this.manageAdmin.Text = "       Admin";
+            this.manageAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageAdmin.UseVisualStyleBackColor = false;
+            this.manageAdmin.Click += new System.EventHandler(this.manageAdmin_Click);
             // 
             // panel6
             // 
@@ -840,22 +756,12 @@
             this.dateTimeTimer.Enabled = true;
             this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
             // 
-            // feed
-            // 
-            this.feed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.feed.Location = new System.Drawing.Point(274, 309);
-            this.feed.Name = "feed";
-            this.feed.Size = new System.Drawing.Size(843, 277);
-            this.feed.TabIndex = 2;
-            this.feed.Paint += new System.Windows.Forms.PaintEventHandler(this.feed_Paint);
-            // 
             // Mentor_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1124, 598);
-            this.Controls.Add(this.feed);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.postPanel);
             this.Controls.Add(this.sidebar);
@@ -871,11 +777,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.manageProfileContainer.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -905,17 +808,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button manageProfiles;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button manageAdmin;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button manageMember;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button manageExecutive;
         private System.Windows.Forms.Timer manageProfileTimer;
         private SiticoneNetFrameworkUI.SiticonePanel postPanel;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox2;
@@ -927,6 +824,5 @@
         private SiticoneNetFrameworkUI.SiticoneLabel timeLabel;
         private SiticoneNetFrameworkUI.SiticoneLabel dateLabel;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.FlowLayoutPanel feed;
     }
 }
